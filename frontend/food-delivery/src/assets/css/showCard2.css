@@ -1,0 +1,77 @@
+/* Card container */
+/* .menu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+} */
+
+/* Hover effect */
+/* .menu-card:hover {
+  transform: translateY(-3px);
+} */
+
+/* Left section (info) */
+/* .menu-info {
+  flex: 1;
+  padding-right: 15px;
+} */
+
+/* .menu-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+} */
+
+/* .menu-description {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+  line-height: 1.4;
+} */
+
+/* .menu-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #111;
+  margin-top: 8px;
+} */
+
+/* Right section (image + add button) */
+/* .menu-image {
+  position: relative;
+  text-align: center;
+} */
+
+/* .menu-image img {
+  width: 110px;
+  height: auto;
+  border-radius: 8px;
+} */
+
+/* "+" button */
+.add-btn {
+ position: relative;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: background 0.3s;
+    top: 2.3rem;
+    right: 2.2rem;
+}
+
+.add-btn:hover {
+  background: #ff6600;
+}
