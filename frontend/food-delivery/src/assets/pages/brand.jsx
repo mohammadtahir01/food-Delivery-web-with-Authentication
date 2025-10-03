@@ -21,7 +21,7 @@ function BrandName() {
         return (
             <Card>
                 <Card.Img variant="top" src={item.image} style={{height:"150px"}} />
-                <Card.Body>
+                <Card.Body style={{backgroundColor:"orange", borderRadius:"0px 0px 10px 10px"}}>
                     <Card.Text>
                         {item.name}
                     </Card.Text>
@@ -35,7 +35,7 @@ function BrandName() {
         <div style={{padding:"1rem 0px 1rem 2rem"}}>
             <h5>Similar Restaurents</h5>
         </div>
-        <div style={{display:"flex",justifyContent:"space-evenly"}}>
+        <div style={{display:"flex",justifyContent:"space-evenly", padding:"1rem"}}>
             {ans}
         </div>
         </>

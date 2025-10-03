@@ -23,7 +23,7 @@ function ShowCard2(){
 
      return(
         <div className="menu-card" style={{fontSize: "10px", display:"flex",boxShadow:"0 2px 8px rgba(0,0,0,0.2)",
-  transition:"transform 0.2s ease"}}>
+  transition:"transform 0.2s ease",padding:"10px 0px 0px 10px"}}>
       <div className="menu-info">
         <h6 className="menu-title">{item.name}</h6>
         <p className="menu-description" style={{display:"grid",width:"165px"}}>{item.description}</p>
