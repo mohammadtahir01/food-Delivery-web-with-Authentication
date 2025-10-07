@@ -34,7 +34,7 @@ function Footer() {
                         <div>
                             <input type="enail" name="email" placeholder="mdtahir123@gmail.com" 
                             style={{padding:"5px 5px 5px 10px",border:"none",borderRadius:"10px",outline:"none"}}/>
-                            <button style={{ backgroundColor: "orange",border:"none",padding:"5px",borderRadius:"1rem" }}>subscribe</button>
+                            <button style={{ backgroundColor: "#F28C28",border:"none",padding:"5px",borderRadius:"1rem" }}>subscribe</button>
                         </div>
                         <p>we want spam, read our <a href="#"> email policy</a></p>
                         <div style={{fontSize:"1.8rem",display:"flex",justifyContent:"space-evenly"}}>

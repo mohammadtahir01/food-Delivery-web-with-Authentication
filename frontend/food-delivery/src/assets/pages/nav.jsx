@@ -14,8 +14,8 @@ const Nav1 = () => {
          <div className="secNav__container2">
           <div className="secNav__container">
             <Link to="home">Home</Link>
-            <Link to="sortdata">SortData</Link>
-            <Link to="about">About</Link>
+            <Link to="pizza&food">Pizza & Food</Link>
+            <Link to="restraunt">Restraunt</Link>
             <Link to="myProject">MyProduct</Link>
           </div>
             <div className="secNav__container__search">

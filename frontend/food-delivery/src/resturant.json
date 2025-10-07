@@ -121,7 +121,87 @@
     "name": "No.1 Shawarma",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNfr4ukU_ThOo2bd579LYOUpXwBr04FioQg&s"
   }
+],
+
+
+"Pizza&Food":[
+  {
+    "id": 1,
+    "name": "Burgers & Fastfood",
+    "restaurants":"21 Restaurants",
+    "image": "https://www.eatingwell.com/thmb/pMb5k3YZDGcJL22PWY0ZlExqowE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/use-a-spoon-chopped-salad-with-tomatoes-cucumber-red-onion-and-kalamata-olives-459c57117cf4494d88ff05413e660c73.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Salads",
+    "restaurants":"4 Restaurants",
+    "image": "https://www.eatingwell.com/thmb/pMb5k3YZDGcJL22PWY0ZlExqowE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/use-a-spoon-chopped-salad-with-tomatoes-cucumber-red-onion-and-kalamata-olives-459c57117cf4494d88ff05413e660c73.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Pasta & Casuals",
+    "restaurants": "3 Restaurants",
+    "image": "https://www.eatingwell.com/thmb/pMb5k3YZDGcJL22PWY0ZlExqowE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/use-a-spoon-chopped-salad-with-tomatoes-cucumber-red-onion-and-kalamata-olives-459c57117cf4494d88ff05413e660c73.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pizza",
+    "restaurants":"4 Restaurants",
+    "image": "https://www.eatingwell.com/thmb/pMb5k3YZDGcJL22PWY0ZlExqowE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/use-a-spoon-chopped-salad-with-tomatoes-cucumber-red-onion-and-kalamata-olives-459c57117cf4494d88ff05413e660c73.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sandwiches",
+    "restaurants":"15 Restaurants",
+    "image": "https://www.eatingwell.com/thmb/pMb5k3YZDGcJL22PWY0ZlExqowE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/use-a-spoon-chopped-salad-with-tomatoes-cucumber-red-onion-and-kalamata-olives-459c57117cf4494d88ff05413e660c73.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Desserts",
+    "restaurants":"18 Restaurants",
+    "image": "https://www.eatingwell.com/thmb/pMb5k3YZDGcJL22PWY0ZlExqowE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/use-a-spoon-chopped-salad-with-tomatoes-cucumber-red-onion-and-kalamata-olives-459c57117cf4494d88ff05413e660c73.jpg"
+  }
+],
+ "MENU":[
+  {
+    "id": 1,
+    "name": "Farm House Xtreme Pizza",
+    "description": "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
+    "sizes": [
+      { "key": "small", "label": "Small", "price": "£21.90" },
+      { "key": "medium", "label": "Medium", "price": "£25.90" },
+      { "key": "large", "label": "Large", "price": "£27.50" },
+      { "key": "xl", "label": "XL (with sauces)", "price": "£32.90" }
+    ],
+    "rating": 3,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc3gqBg9hEJPaOly8m0GVfYmHBdYSixFCZUA&s"
+  },
+  {
+    "id": 2,
+    "name": "Royal Cheese Feast",
+    "description": "Loaded with extra cheese, peppers & onions.",
+    "sizes": [
+      { "key": "small", "label": "Small", "price": "£17.50" },
+      { "key": "medium", "label": "Medium", "price": "£20.00" },
+      { "key": "large", "label": "Large", "price": "£23.00" }
+    ],
+    "rating": 4,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNfr4ukU_ThOo2bd579LYOUpXwBr04FioQg&s"
+  },
+  {
+    "id": 3,
+    "name": "Veggie Delight",
+    "description": "Fresh vegetables, light cheese and a crispy base.",
+    "sizes": [
+      { "key": "small", "label": "Small", "price": "£12.90" },
+      { "key": "medium", "label": "Medium", "price": "£15.90" },
+      { "key": "large", "label": "Large", "price": "£18.50" }
+    ],
+    "rating": 4,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNfr4ukU_ThOo2bd579LYOUpXwBr04FioQg&s"
+  }
 ]
+
 }
 
 
