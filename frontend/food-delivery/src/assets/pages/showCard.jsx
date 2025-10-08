@@ -15,6 +15,7 @@ function ResturentCard() {
     useEffect(() => {
         onload();
     }, [])
+
     const ans = val.map((item) => {
         return (
             <Card className="bg-dark text-white" style={{ height:"200px" }}>

@@ -1,45 +1,45 @@
-import { useEffect, useState } from "react";
-import axios from "axios"
-import Card from 'react-bootstrap/Card';
+// import { useEffect, useState } from "react";
+// import axios from "axios"
+// import Card from 'react-bootstrap/Card';
 
-function BrandName() {
-    const [val, setVal] = useState([])
+// function BrandName() {
+//     const [val, setVal] = useState([])
 
-    const onload = async () => {
-        let api = "http://localhost:3000/Brand"
-        let res = await axios.get(api);
-        console.log(res.data);
-        setVal(res.data);
-    }
+//     const onload = async () => {
+//         let api = "http://localhost:3000/Brand"
+//         let res = await axios.get(api);
+//         console.log(res.data);
+//         setVal(res.data);
+//     }
 
-    useEffect(() => {
-        onload();
-    }, [])
+//     useEffect(() => {
+//         onload();
+//     }, [])
 
-    const ans = val.map((item) => {
+//     const ans = val.map((item) => {
 
-        return (
-            <Card>
-                <Card.Img variant="top" src={item.image} style={{height:"150px"}} />
-                <Card.Body style={{backgroundColor:"orange", borderRadius:"0px 0px 10px 10px"}}>
-                    <Card.Text>
-                        {item.name}
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-        )
-    })
+//         return (
+//             <Card>
+//                 <Card.Img variant="top" src={item.image} style={{height:"150px"}} />
+//                 <Card.Body style={{backgroundColor:"orange", borderRadius:"0px 0px 10px 10px"}}>
+//                     <Card.Text>
+//                         {item.name}
+//                     </Card.Text>
+//                 </Card.Body>
+//             </Card>
+//         )
+//     })
 
-    return (
-        <>
-        <div style={{padding:"1rem 0px 1rem 2rem"}}>
-            <h5>Similar Restaurents</h5>
-        </div>
-        <div style={{display:"flex",justifyContent:"space-evenly", padding:"1rem"}}>
-            {ans}
-        </div>
-        </>
-    )
+//     return (
+//         <>
+//         <div style={{padding:"1rem 0px 1rem 2rem"}}>
+//             <h5>Similar Restaurents</h5>
+//         </div>
+//         <div style={{display:"flex",justifyContent:"space-evenly", padding:"1rem"}}>
+//             {ans}
+//         </div>
+//         </>
+//     )
 
-}
-export default BrandName;
+// }
+// export default BrandName;
