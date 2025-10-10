@@ -10,10 +10,10 @@ const resturantMenu = new mongoose.Schema({
 
 const restaurants = new mongoose.Schema({
  
-  name: { type: String, required: true },
+  name: { type: String },
   image: String,
   discount: String,
-  cuisine: [String], // array of strings
+  cuisine: String,
   location: String,
   rating: Number,
   deliveryTime: String,

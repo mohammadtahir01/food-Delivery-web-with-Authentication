@@ -1,13 +1,13 @@
-// import MenuCard from "./menuCard";
-// import SwiperNavigation from "./swiper";
+import MenuCard from "./menuCard";
+import SwiperNavigation from "./swiper";
 
 
-// function RestrauntMenu(){
-//     return(
-//         <>
-//          <SwiperNavigation/>
-//          <MenuCard/>
-//         </>
-//     )
-// }
-// export default RestrauntMenu;
+function RestrauntMenu(){
+    return(
+        <>
+         <SwiperNavigation/>
+         <MenuCard/>/
+        </>
+    )
+}
+export default RestrauntMenu;

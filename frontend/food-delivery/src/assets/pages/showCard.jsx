@@ -10,15 +10,16 @@ function ResturentCard() {
         let api = "http://localhost:3000/resturant";
         let res = await axios.get(api);
         console.log(res.data);
-        setVal(res.data);
+        setVal(res.data.data);
     }
     useEffect(() => {
         onload();
     }, [])
 
-    const ans = val.map((item) => {
+    
+    const ans = val.map((item,key) => {
         return (
-            <Card className="bg-dark text-white" style={{ height:"200px" }}>
+            <Card className="bg-dark text-white" style={{ height:"200px" }} key={key}>
                 <Card.Img src={item.image} alt="Card image" />
                 <Card.ImgOverlay className='bottom-overlay'>
                     <Card.Title>{item.name} </Card.Title>
