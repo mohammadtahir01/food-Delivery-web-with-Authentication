@@ -105,6 +105,34 @@ const menuSave=async(req,res)=>{
     res.status(500).json({err: err.message});
   }
 }
+//card deal
+// const Deal=async(req,res)=>{
+//   let {id} = req.params;
+//   console.log(id)
+//   // let dealData = await Menu.findById(id);
+//   // console.log(dealData);
+//   res.send("data is empty now");
+// }
+
+
+const Deal = async (req, res) => {
+  // try {
+    const { id } = req.params;
+    const dealData = await Menu.findById(id);
+    console.log(dealData);
+    res.send("ok");
+
+    // if (!dealData) {
+    //   return res.status(404).json({ message: "Deal not found" });
+    // }
+
+  //   res.status(200).json({ message: "Deal data fetched!", data: dealData });
+  // } catch (err) {
+  //   console.error("Error fetching deal:", err);
+  //   res.status(500).json({ error: err.message });
+  // }
+};
+
 
 module.exports = {
   restData,
@@ -117,4 +145,5 @@ module.exports = {
   pizzaSave,
   menuData,
   menuSave,
+  Deal,
 };

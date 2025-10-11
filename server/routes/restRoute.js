@@ -12,6 +12,8 @@ route.get("/Pizza&Food",controllers.pizzaData);
 route.post("/pizzaData",controllers.pizzaSave);
 route.get("/MENU", controllers.menuData);
 route.post("/sendMenu", controllers.menuSave);
+//card deal
+route.get("/dealPrice/:id", controllers.Deal);
 
 
 module.exports = route;

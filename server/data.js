@@ -162,9 +162,9 @@ module.exports = {
       name: "Farm House Xtreme Pizza",
       description: "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
       sizes: [
-        { key: "small", label: "Small", price: "£21.90" },
-        { key: "medium", label: "Medium", price: "£25.90" },
-        { key: "large", label: "Large", price: "£27.50" },
+        { key: "small", label: "Small", price: "210" },
+        { key: "medium", label: "Medium", price: "290" },
+        { key: "large", label: "Large", price: "250" },
       ],
       rating: 3,
       image:
@@ -176,9 +176,9 @@ module.exports = {
       name: "Farm House Xtreme Pizza",
       description: "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
       sizes: [
-        { key: "small", label: "Small", price: "£21.90" },
-        { key: "medium", label: "Medium", price: "£25.90" },
-        { key: "large", label: "Large", price: "£27.50" },
+        { key: "small", label: "Small", price: "80" },
+        { key: "medium", label: "Medium", price: "59" },
+        { key: "large", label: "Large", price: "50" },
       ],
       rating: 3,
       image:
@@ -190,9 +190,9 @@ module.exports = {
       name: "Farm House Xtreme Pizza",
       description: "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
       sizes: [
-        { key: "small", label: "Small", price: "£21.90" },
-        { key: "medium", label: "Medium", price: "£25.90" },
-        { key: "large", label: "Large", price: "£27.50" },
+        { key: "small", label: "Small", price: "100" },
+        { key: "medium", label: "Medium", price: "120" },
+        { key: "large", label: "Large", price: "160" },
       ],
       rating: 3,
       image:
@@ -205,9 +205,9 @@ module.exports = {
       name: "Farm House Xtreme Pizza",
       description: "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
       sizes: [
-        { key: "small", label: "Small", price: "£21.90" },
-        { key: "medium", label: "Medium", price: "£25.90" },
-        { key: "large", label: "Large", price: "£27.50" },
+        { key: "small", label: "Small", price: "90" },
+        { key: "medium", label: "Medium", price: "120" },
+        { key: "large", label: "Large", price: "150" },
       ],
       rating: 3,
       image:
@@ -219,9 +219,9 @@ module.exports = {
       name: "Farm House Xtreme Pizza",
       description: "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
       sizes: [
-        { key: "small", label: "Small", price: "£21.90" },
-        { key: "medium", label: "Medium", price: "£25.90" },
-        { key: "large", label: "Large", price: "£27.50" },
+        { key: "small", label: "Small", price: "85" },
+        { key: "medium", label: "Medium", price: "75" },
+        { key: "large", label: "Large", price: "259" },
       ],
       rating: 3,
       image:
@@ -233,9 +233,9 @@ module.exports = {
       name: "Farm House Xtreme Pizza",
       description: "Cheeseburger, 3 medium-sized french fries, 3 cold drinks.",
       sizes: [
-        { key: "small", label: "Small", price: "£21.90" },
-        { key: "medium", label: "Medium", price: "£25.90" },
-        { key: "large", label: "Large", price: "£27.50" },
+        { key: "small", label: "Small", price: "40" },
+        { key: "medium", label: "Medium", price: "49" },
+        { key: "large", label: "Large", price: "50" },
       ],
       rating: 3,
       image:
