@@ -21,9 +21,9 @@ function PizzaCard(){
     },[])
     const ans = val.map((item)=>{
         return(
-        <Card>
-      <Card.Img variant="top" src={item.image} />
-      <Card.Body style={{padding:"10px",fontSize:"13px"}}>
+        <Card style={{height:"200px",width:"50%"}}>
+      <Card.Img variant="top" src={item.image}  style={{height:"145px",padding:"10px",borderRadius:"15px"}}/>
+      <Card.Body style={{padding:"14px",fontSize:"13px"}}>
          <Card.Title style={{fontSize:"0.8rem"}}><b>{item.name}</b></Card.Title>
         <Card.Text style={{color:"#F28C28"}}>
         {item.restaurants}
@@ -35,6 +35,7 @@ function PizzaCard(){
 
     return(
         <>
+        <div>
         <div style={{padding:"1.5rem 0px 1rem 3.7rem"}}>
            <h5><b>Food Delivery Popular Categories</b></h5>
         </div>
@@ -44,6 +45,7 @@ function PizzaCard(){
 
         <div style={{display:"flex",justifyContent:"center",alignItems:"center",borderRadius:"15px"}}>
             <img src={logo} alt="logo" style={{width: "90%", padding:"1rem",height:"400px",borderRadius:"2rem"}} />
+        </div>
         </div>
         </>
        

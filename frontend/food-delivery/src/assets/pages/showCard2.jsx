@@ -23,11 +23,11 @@ function ShowCard2(){
 
      return(
         <div className="menu-card" style={{fontSize: "10px", display:"flex",boxShadow:"0 2px 8px rgba(0,0,0,0.2)",
-  transition:"transform 0.2s ease",padding:"10px 0px 0px 10px"}}>
+  transition:"transform 0.2s ease",padding:"10px 0px 0px 10px", width:"40%", justifyContent:"space-between"}}>
       <div className="menu-info">
         <h6 className="menu-title">{item.name}</h6>
-        <p className="menu-description" style={{display:"grid",width:"165px"}}>{item.description}</p>
-        <p className="menu-price">{item.currency} {item.price}</p>
+        <p className="menu-description" style={{display:"grid",width:"200px",padding:"10px",fontSize:"12px"}}>{item.description}</p>
+        <p className="menu-price"><span><b> Rs:- {item.price}</b></span></p>
       </div>
       <div className="menu-image">
         <img src={item.image} alt={item.name} style={{height:"100px"}}/>

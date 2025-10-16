@@ -46,6 +46,8 @@ const burgerSave = async (req, res) => {
 };
 
 const branData = async (req, res) => {
+  // console.log(req.body);
+  // res.send("ok");
   try {
     let braName = await BrandName.find();
     console.log(braName);
@@ -56,6 +58,8 @@ const branData = async (req, res) => {
 };
 
 const brandDatasave =async(req,res)=>{
+  // console.log(req.body);
+  // res.send("ok");
   try{
     let brandData1 = await BrandName.insertMany(data.Brand);
     console.log(brandData1);
@@ -116,21 +120,15 @@ const menuSave=async(req,res)=>{
 
 
 const Deal = async (req, res) => {
-  // try {
-    const { id } = req.params;
+    const {id,sizeId} = req.params
+    console.log("id  is  ",id,sizeId)
+    // const {price} = req.query;
+    // console.log(_id)
     const dealData = await Menu.findById(id);
-    console.log(dealData);
-    res.send("ok");
-
-    // if (!dealData) {
-    //   return res.status(404).json({ message: "Deal not found" });
-    // }
-
-  //   res.status(200).json({ message: "Deal data fetched!", data: dealData });
-  // } catch (err) {
-  //   console.error("Error fetching deal:", err);
-  //   res.status(500).json({ error: err.message });
-  // }
+    console.log(dealData)
+    const sizeData = dealData.sizes.find(s => s._id.toString() === sizeId);
+    console.log(sizeData);
+    res.status(200).json({message:"data is ok", dealData: sizeData,dealData1:dealData});
 };
 
 
