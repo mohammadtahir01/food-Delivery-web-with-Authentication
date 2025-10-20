@@ -2,6 +2,7 @@ const express = require("express");
 const route = express.Router();
 const controllers = require("../controllers/restController");
 
+
 route.get("/resturant", controllers.restData);
 route.post('/senddata',controllers.senddata);
 route.get("/burger", controllers.burgerData);
@@ -14,6 +15,12 @@ route.get("/MENU", controllers.menuData);
 route.post("/sendMenu", controllers.menuSave);
 //card deal
 route.get("/dealPrice/:id/:sizeId", controllers.Deal);
+//burger data 
+route.get("/sendOrderdata/:id",controllers.orderSend);
+route.get("/getresturant/:id",controllers.getRestdata);
+//comment data or rating
+route.get("/getrating/:id",controllers.getReviews)
+route.post("/sendrating",controllers.sendRating)
 
 
 module.exports = route;

@@ -2,24 +2,33 @@ import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import "../css/showCard.css";
 import axios from "axios"
+import {useNavigate} from "react-router-dom";
 
 function ResturentCard() {
     const [val, setVal] = useState([]);
 
+    const navigate = useNavigate();
+
     const onload = async () => {
         let api = "http://localhost:3000/resturant";
         let res = await axios.get(api);
-        console.log(res.data);
+        console.log(res.data.data);
         setVal(res.data.data);
+
     }
     useEffect(() => {
         onload();
     }, [])
 
+
+    const cardClick=async(id)=>{
+       navigate(`/showRest/${id}`)
+    }
+
     
     const ans = val.map((item,key) => {
         return (
-            <Card className="bg-dark text-white" style={{ height:"200px" }} key={key}>
+            <Card className="bg-dark text-white" style={{ height:"200px" }} key={key} onClick={()=>cardClick(item._id)}>
                 <Card.Img src={item.image} alt="Card image" />
                 <Card.ImgOverlay className='bottom-overlay'>
                     <Card.Title>{item.name} </Card.Title>
@@ -51,38 +60,3 @@ export default ResturentCard;
 
 
 
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// import Card from "react-bootstrap/Card"; // make sure bootstrap is installed
-
-// function ResturentCard() {
-//   const [val, setVal] = useState([]);
-
-//   const onload = async () => {
-//     let api = "http://localhost:3000/resturant";
-//     let res = await axios.get(api);
-//     setVal(res.data); // ✅ update state here
-//     console.log(res.data);
-//   };
-
-//   useEffect(() => {
-//     onload();
-//   }, []);
-
-//   return (
-//     <>
-//       {val.map((item, i) => (
-//         <Card key={i} className="bg-dark text-white mb-3">
-//           <Card.Img src={item.image} alt="Card image" />
-//           <Card.ImgOverlay>
-//             <Card.Title>{item.name}</Card.Title>
-//             <Card.Text>{item.cuisine}</Card.Text>
-//             <Card.Text>Last updated 3 mins ago</Card.Text>
-//           </Card.ImgOverlay>
-//         </Card>
-//       ))}
-//     </>
-//   );
-// }
-
-// export default ResturentCard;

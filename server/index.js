@@ -16,5 +16,5 @@ app.use(express.json());
 app.use("/", restRoute);
 
 app.listen(3000, ()=>{
-    console.log("server is running on 30000 !")
+    console.log("server is running on 3000 !")
 })

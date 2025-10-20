@@ -1,15 +1,14 @@
 const mongoose = require("mongoose");
 
 
-const resturantMenu = new mongoose.Schema({
-  itemId: Number,
-  itemName: String,
-  price: Number,
-  veg: Boolean,
-});
+// const resturantMenu = new mongoose.Schema({
+//   itemId: Number,
+//   itemName: String,
+//   price: Number,
+//   veg: Boolean,
+// });
 
 const restaurants = new mongoose.Schema({
- 
   name: { type: String },
   image: String,
   discount: String,
@@ -18,7 +17,7 @@ const restaurants = new mongoose.Schema({
   rating: Number,
   deliveryTime: String,
   priceRange: String,
-  menu: [resturantMenu],
+  price:Number,
 });
 
 const Restaurant = mongoose.model("Restaurant", restaurants);

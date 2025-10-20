@@ -10,11 +10,12 @@ module.exports = {
     location: "London",
     rating: 4.5,
     deliveryTime: "25-30 min",
-    priceRange: "$$",
-    menu: [
-      { itemId: 101, itemName: "Classic Burger", price: 8.99, veg: false },
-      { itemId: 102, itemName: "Veggie Burger", price: 7.49, veg: true }
-    ]
+    price:200,
+    // priceRange: "$$",
+    // menu: [
+    //   { itemId: 101, itemName: "Classic Burger", price: 8.99, veg: false },
+    //   { itemId: 102, itemName: "Veggie Burger", price: 7.49, veg: true }
+    // ]
   },
   {
 
@@ -25,11 +26,7 @@ module.exports = {
     location: "London",
     rating: 4.2,
     deliveryTime: "30-40 min",
-    priceRange: "$$",
-    menu: [
-      { itemId: 201, itemName: "Grilled Chicken Salad", price: 12.99, veg: false },
-      { itemId: 202, itemName: "Veggie Salad", price: 10.49, veg: true }
-    ]
+    price:190,
   },
   {
     name: "Butterbrot Cafe",
@@ -39,11 +36,7 @@ module.exports = {
     location: "London",
     rating: 4.7,
     deliveryTime: "20-25 min",
-    priceRange: "$",
-    menu: [
-      { itemId: 301, itemName: "Sandwich", price: 6.99, veg: true },
-      { itemId: 302, itemName: "Chicken Panini", price: 9.49, veg: false }
-    ]
+    Price:180,
   }
 ],
 
@@ -168,7 +161,7 @@ module.exports = {
       ],
       rating: 3,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc3gqBg9hEJPaOly8m0GVfYmHBdYSixFCZUA&s",
+        "https://img.freepik.com/free-photo/chef-holding-seafood-pizza-with-shrimp-mussels-calamari-squid-cheese_141793-2291.jpg?t=st=1760643130~exp=1760646730~hmac=b8757b81b85f0898b7ea10f20c5a255d3e5731fb8f270e070a0d1d5f024a6373&w=1060",
     },
 
     {

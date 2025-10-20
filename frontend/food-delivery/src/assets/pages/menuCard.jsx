@@ -46,7 +46,8 @@ function MenuCard() {
   try {
     const api = `http://localhost:3000/dealPrice/${id}/${sizeId}`;
     const res = await axios.get(api);
-    const mergedData = { ...res.data.dealData1, price: res.data.dealData.price, qty: 1 };
+    const selectSize = res.data.dealData;
+    const mergedData = { ...res.data.dealData1, price: selectSize.price, size:selectSize, qty: 1 };
 
     setVal((prev) => {
       const existing = prev.find((item) => item._id === mergedData._id && item.sizeId === sizeId);
@@ -107,9 +108,9 @@ function MenuCard() {
 
               <div style={{ display: "flex", justifyContent: "space-evenly", padding: "10px 0px 10px 0px" }}>
                 <>
-                  <button onClick={() => deal(item.sizes[0].price,item._id,item.sizes[0]._id)} style={{ padding: "5px 8px 5px 8px", borderRadius: "20px", border: "none", backgroundColor: "gray" }}>{item.sizes[0].price}</button>
-                  <button onClick={() => deal(item.sizes[1].price,item._id,item.sizes[1]._id)} style={{ padding: "5px 8px 5px 8px", borderRadius: "20px", border: "none", backgroundColor: "gray" }}>{item.sizes[1].price}</button>
-                  <button onClick={() => deal(item.sizes[2].price,item._id,item.sizes[2]._id)} style={{ padding: "5px 8px 5px 8px", borderRadius: "20px", border: "none", backgroundColor: "gray" }}>{item.sizes[2].price}</button>
+                  <button onClick={() => deal(item.sizes[0].price,item._id,item.sizes[0]._id)} style={{ padding: "5px 8px 5px 8px", borderRadius: "20px", border: "none", backgroundColor: "gray" }}>{item.sizes[0].label} : {item.sizes[0].price}</button>
+                  <button onClick={() => deal(item.sizes[1].price,item._id,item.sizes[1]._id)} style={{ padding: "5px 8px 5px 8px", borderRadius: "20px", border: "none", backgroundColor: "gray" }}>{item.sizes[1].label} : {item.sizes[1].price}</button>
+                  <button onClick={() => deal(item.sizes[2].price,item._id,item.sizes[2]._id)} style={{ padding: "5px 8px 5px 8px", borderRadius: "20px", border: "none", backgroundColor: "gray" }}>{item.sizes[2].label} : {item.sizes[2].price}</button>
                 </>
               </div>
 
@@ -150,6 +151,8 @@ function MenuCard() {
                  </div>
                   <div>
                     Des:-{s.description}
+                    <br />
+                    Sizes:- <b>{s.size.label}</b>
                     <br />
                     <div style={{display:"flex",justifyContent:"space-between"}}>
                     <b> <span style={{position:"relative", top:""}}>Rs:- {s.price}</span></b>

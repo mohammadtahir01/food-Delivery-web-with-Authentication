@@ -1,13 +1,13 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
 import "../css/ShowCard2.css"
+
 
 
 function ShowCard2(){
  const [val,setVal] = useState([]);
 
  const onload=async()=>{
- 
     let api = "http://localhost:3000/burger";
     let res = await axios.get(api);
     console.log(res.data);
@@ -18,6 +18,12 @@ function ShowCard2(){
  useEffect(()=>{
     onload();
  },[]);
+
+ const sendData=async(id)=>{
+   let api = `http://localhost:3000/sendOrderdata/${id}`;
+   let res = await axios.get(api);
+   console.log(res.data.data);
+ }
 
  const ans = val.map((item)=>{
 
@@ -30,8 +36,8 @@ function ShowCard2(){
         <p className="menu-price"><span><b> Rs:- {item.price}</b></span></p>
       </div>
       <div className="menu-image">
-        <img src={item.image} alt={item.name} style={{height:"100px"}}/>
-        <button className="add-btn">+</button>
+        <img src={item.image} alt="burger" style={{height:"100px"}}/>
+        <button className="add-btn" onClick={()=>sendData(item._id)}>+</button>
       </div>
     </div>
     )

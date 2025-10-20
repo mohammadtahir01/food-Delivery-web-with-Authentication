@@ -4,6 +4,7 @@ const Burger = require("../models/burModel");
 const BrandName = require("../models/brandModel");
 const pizzaFood = require("../models/pizzafoodModel");
 const Menu = require("../models/menuModel");
+const ComntSchema = require("../models/commentModel");
 
 const restData = async (req, res) => {
   try {
@@ -131,6 +132,64 @@ const Deal = async (req, res) => {
     res.status(200).json({message:"data is ok", dealData: sizeData,dealData1:dealData});
 };
 
+const orderSend=async(req,res)=>{
+  const {id} = req.params;
+  // console.log("ok",id);
+  const dealData12 = await Burger.findById(id);
+    console.log(dealData12)
+    res.status(200).json({message:"data is ok", data:dealData12});
+}
+
+const getRestdata=async(req,res)=>{
+  const {id} = req.params;
+  console.log("id recieved!",id);
+  const dealData13 = await Restaurant.findById(id);
+  console.log(dealData13)
+  res.status(200).json({message:"data is ok", data:dealData13})
+}
+
+
+const getReviews = async (req, res) => {
+  try {
+    const { id } = req.params;
+    console.log(id)
+    const dataReviews = await ComntSchema.find({ restId: id });
+    console.log(dataReviews);
+    res.status(200).json({ success: true, data: dataReviews });
+  } catch (err) {
+    res.status(500).json({ success: false, message: err.message });
+  }
+};
+
+
+const sendRating=async(req,res)=>{
+ try{
+   const { restId,rating , comment} = req.body;
+  let contdata = await ComntSchema.create({restId,rating,comment});
+  console.log(contdata);
+  res.status(200).json({success: true, data:contdata})
+ }catch(err){
+  res.status(500).json({ success: false, message: err.message });
+ }
+}
+
+// const getReviews =async(req,res)=>{
+//   let {id} = req.params;
+//   let dataReviews = await ComntSchema.find({restId: id});
+//   console.log(dataReviews);
+//   res.send("ok");
+// }
+
+
+
+// const getReviews = async (req, res) => {
+//   let { id } = req.params;
+//   console.log("id",id)
+//   // let dataReviews = await ComntSchema.find({ restId: id });
+//   // console.log(dataReviews);
+//   res.send("ok");
+// };
+
 
 module.exports = {
   restData,
@@ -144,4 +203,8 @@ module.exports = {
   menuData,
   menuSave,
   Deal,
+  orderSend,
+  getRestdata,
+  sendRating,
+  getReviews,
 };
