@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "../images/logo2.png";
 import '../css/nav1.css';
 import { MdOutlineShoppingBag } from "react-icons/md";
+import { NavLink } from "react-router-dom";
+
 
 
 const Nav1 = () => {
@@ -13,19 +15,19 @@ const Nav1 = () => {
           </div>
          <div className="secNav__container2">
           <div className="secNav__container">
-            <Link to="home">Home</Link>
-            <Link to="pizza&food">Pizza & Food</Link>
-            <Link to="restraunt">Restraunt</Link>
-            <Link to="myProject">MyProduct</Link>
+            <NavLink to="home"  className={({ isActive }) => isActive ? "active-link" : "inactive-link"} >Home</NavLink>
+            <NavLink to="pizza&food" className={({ isActive }) => isActive ? "active-link" : "inactive-link"} >Pizza & Food</NavLink>
+            <NavLink to="restraunt" className={({ isActive }) => isActive ? "active-link" : "inactive-link"} >Restraunt</NavLink>
+            <NavLink to="myProject" className={({ isActive }) => isActive ? "active-link" : "inactive-link"} >MyProduct</NavLink>
           </div>
             <div className="secNav__container__search">
                 <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" name="textVal" />
                 <button className="secNav__container__search__button">Search</button>
             </div>  
 
-            <div>
+            {/* <div>
                   <MdOutlineShoppingBag />
-            </div>  
+            </div>   */}
 
             <Link to="myProject">SignUp</Link>
             <Link to="myProject">LogIn</Link>

@@ -20,7 +20,11 @@ route.get("/sendOrderdata/:id",controllers.orderSend);
 route.get("/getresturant/:id",controllers.getRestdata);
 //comment data or rating
 route.get("/getrating/:id",controllers.getReviews)
-route.post("/sendrating",controllers.sendRating)
+route.post("/sendrating",controllers.sendRating);
+//reviews
+route.post("/seedreviews",controllers.postReviews);
+route.get("/getreviews",controllers.getReviewsdata);
+
 
 
 module.exports = route;

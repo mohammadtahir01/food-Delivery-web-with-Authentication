@@ -5,6 +5,7 @@ const BrandName = require("../models/brandModel");
 const pizzaFood = require("../models/pizzafoodModel");
 const Menu = require("../models/menuModel");
 const ComntSchema = require("../models/commentModel");
+const Reviews = require("../models/reviewModel");
 
 const restData = async (req, res) => {
   try {
@@ -111,13 +112,6 @@ const menuSave=async(req,res)=>{
   }
 }
 //card deal
-// const Deal=async(req,res)=>{
-//   let {id} = req.params;
-//   console.log(id)
-//   // let dealData = await Menu.findById(id);
-//   // console.log(dealData);
-//   res.send("data is empty now");
-// }
 
 
 const Deal = async (req, res) => {
@@ -190,6 +184,28 @@ const sendRating=async(req,res)=>{
 //   res.send("ok");
 // };
 
+const postReviews=async(req,res)=>{
+  try{
+    let alreview =  await Reviews.insertMany(data.reviewData);
+  console.log(alreview);
+  res.status(200).json({message:"data has sent", data:alreview})
+  }catch(error){
+    console.error("Error inserting review data:", error);
+    res.status(500).json({ error: "Failed to insert review data" });
+  }
+
+}
+
+const getReviewsdata=async(req,res)=>{
+  try{
+    let alreviewdata = await Reviews.find();
+  res.status(200).json({data:alreviewdata});
+  }catch(err){
+    res.status(500).json({ error: "Failed to fetch reviews" });
+  }
+}
+
+
 
 module.exports = {
   restData,
@@ -207,4 +223,6 @@ module.exports = {
   getRestdata,
   sendRating,
   getReviews,
+  postReviews,
+  getReviewsdata,
 };

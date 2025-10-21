@@ -236,4 +236,47 @@ module.exports = {
     },
     
   ],
+
+  reviewData:[
+  {
+    name: "St Glx",
+    location: "South London",
+    date: "24th September, 2023",
+    rating: 5,
+    review: "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald’s standard – hot and satisfying.",
+    profileImage: "https://example.com/images/user1.jpg"
+  },
+  {
+    name: "Ava Johnson",
+    location: "New York, USA",
+    date: "5th October, 2023",
+    rating: 4,
+    review: "Good service and clean environment. The staff was polite, but the waiting time could have been shorter.",
+    profileImage: "https://example.com/images/user2.jpg"
+  },
+  {
+    name: "Rahul Mehta",
+    location: "Mumbai, India",
+    date: "12th November, 2023",
+    rating: 5,
+    review: "Excellent experience! The food was fresh, the staff was helpful, and the restaurant was well-maintained.",
+    profileImage: "https://example.com/images/user3.jpg"
+  },
+  {
+    name: "Sophie Lee",
+    location: "Sydney, Australia",
+    date: "2nd December, 2023",
+    rating: 4,
+    review: "Nice atmosphere and quick service. The burger was great but the fries were a bit cold.",
+    profileImage: "https://example.com/images/user4.jpg"
+  },
+  {
+    name: "Carlos Rivera",
+    location: "Madrid, Spain",
+    date: "18th January, 2024",
+    rating: 5,
+    review: "Fast service and delicious food! The staff went out of their way to make sure everything was perfect.",
+    profileImage: "https://example.com/images/user5.jpg"
+  }
+],
 };

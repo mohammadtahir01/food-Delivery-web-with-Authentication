@@ -26,21 +26,6 @@ function MenuCard() {
     onload();
   }, []);
 
-  // const deal = async (price,id,sizeId) => {
-    
-  //   try {
-  //     // console.log("Deal clicked:", item, id);
-  //     const api = `http://localhost:3000/dealPrice/${id}/${sizeId}`;
-  //     const res = await axios.get(api);
-  //     const mergedData = { ...res.data.dealData1, price: res.data.dealData.price };
-  //     setVal(prev=>[...prev,mergedData]);
-  //     // console.log("Deal response:", res.data.dealData1);
-  //   } catch (err) {
-  //     console.error("Error fetching deal:", err);
-  //   }
-  // };
-
-
 
   const deal = async (price, id, sizeId) => {
   try {
